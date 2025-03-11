@@ -1,0 +1,21 @@
+
+1. What is the weather in the city where the 2024 Nobel Prize in Physics winner was born?
+2. What is the weather in the capital city of the country that won the 2024 Eurovision Song Contest?
+3. Where is warmer right now, Sydney or Cape Town?
+4. Calculate step by step: ((15 * 4) + (30 / 5)) % (3^2)
+5. Which city is colder right now, Toronto or Berlin?
+6. Calculate step by step: (144 / 12) * (9 - 3) % (5^2)
+7. What is the weather in the city where the F1 world champion in 2024 was born?
+8. What is the weather in the city where the 2024 Ballon d'Or winner was born? and also tell me the weather in Buenos Aires.
+9. Where is colder at the moment, Madrid or Buenos Aires?
+10. What is the reult of this mathematical expression: ((12 + 8) * (6 - 2)) / (2^3) % 7
+11. Who discovered the law of gravity, and what’s the temperature in the city where he was born?
+12. Get the latest news about Mars exploration and calculate how many years ago the first Mars rover landed. 
+13. What is the current weather in the northernmost capital city in the world?
+14. Find out who won the most recent Nobel Prize in Literature and check the weather in their birthplace.
+15. Compare the temperatures in the highest and lowest elevation cities in the world.
+16. What’s the total distance between Tokyo, London, and New York, and what’s the weather in each city?
+17. Find the population of the largest city in South America and check the weather there.
+18. Calculate the square root of the total number of Olympic medals won by the U.S. in history.
+19. Who was the first person to climb Mount Everest, and what’s the current temperature there?
+20. Which city has a higher temperature right now: the capital of the country with the most volcanoes or the capital of the country with the most lakes?
