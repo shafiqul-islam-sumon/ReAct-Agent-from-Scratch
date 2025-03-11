@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# .DS_Store
+.DS_Store
+
+# pre-commit
+.git/hooks/
+
 # Distribution / packaging
 .Python
 build/
@@ -128,7 +134,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
