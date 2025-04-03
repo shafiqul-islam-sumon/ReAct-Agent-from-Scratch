@@ -2,7 +2,6 @@
 
 This project walks you through building a **ReAct (Reasoning + Acting) AI Agent** entirely from scratch in Python, **without using LangChain, LlamaIndex, or any external framework**. The result is a fully customizable and transparent system capable of complex reasoning and tool use, wrapped in a user-friendly web interface built with Streamlit.
 
----
 
 ## 🔍 Why Build a ReAct Agent from Scratch?
 
@@ -15,7 +14,6 @@ Most AI frameworks abstract away the core reasoning and decision-making logic, w
 
 By building from scratch, you'll take complete control of your agent's behavior and gain real insight into the reasoning-action-observation loop that powers modern AI agents.
 
----
 
 ## 🤖 What is a ReAct AI Agent?
 
@@ -30,7 +28,6 @@ Unlike traditional chatbots that rely on predefined rules or one-shot responses,
 
 This allows the agent to **solve multi-step problems**, **correct itself**, and **deliver accurate, up-to-date answers**.
 
----
 
 ## 💡 Why ReAct Is Better Than Traditional AI Agents
 
@@ -50,7 +47,7 @@ A traditional agent fails here, but a ReAct agent:
 3. Looks up the weather in that location  
 4. Returns a refined, complete answer
 
----
+
 ## 🔍 Inside the ReAct Agent: A Step-by-Step Breakdown
 
 Unlike traditional AI models that return static answers, a **ReAct Agent** follows a structured loop—**Thought → Action → PAUSE → Observation**—to reason step by step, interact with external tools, and refine its responses dynamically.
@@ -68,7 +65,6 @@ The agent first interprets the user query and plans what to do. It breaks the pr
 > *"Who discovered gravity, and what’s the weather where he was born?"*  
 > → Thought: “Find the scientist → Find birthplace → Check weather.”
 
----
 
 ### ⚡ Action – Using Tools
 
@@ -82,13 +78,10 @@ Once the agent decides, it performs an action using a tool like:
 > **Example:**  
 > `Action: wikipedia: "Who discovered gravity?"`
 
----
 
 ### ⏸️ PAUSE – Wait for Results
 
 After the action, the agent pauses and waits for the result. This ensures it doesn’t assume or guess and can respond based on real data.
-
----
 
 ### 👀 Observation – React and Refine
 
@@ -96,8 +89,6 @@ The agent receives a result, evaluates it, and decides the next step. It may tak
 
 > **Observation:** "Isaac Newton discovered gravity."  
 > → Next Thought: "Where was Newton born?"
-
----
 
 ### 🔄 Full Loop Example
 
@@ -114,13 +105,11 @@ The agent receives a result, evaluates it, and decides the next step. It may tak
 
 This loop-based approach makes the ReAct Agent **adaptive, intelligent, and capable of solving multi-step queries** with high accuracy and transparency.
 
----
 
 ## 🏗️ Architecture of the ReAct Agent
 
 The ReAct agent is built to think, act, observe, and refine its answers using a loop-driven architecture. It breaks complex problems into steps, leverages external tools, and dynamically updates its reasoning.
 
----
 
 ### 🖼️ System Architecture Overview
 
@@ -135,13 +124,11 @@ The architecture consists of six core stages:
 5. **Observation Loop**  
 6. **Final Answer Generation**
 
----
 
 ### 1️⃣ Query Processing
 
 The process starts with the user's question. It can range from basic knowledge to real-time weather or multi-hop queries. The agent first decides whether the answer requires memory, reasoning, or tools.
 
----
 
 ### 2️⃣ Thought & Reasoning
 
@@ -152,7 +139,6 @@ ChatGPT acts as the brain. It:
 - Checks past interactions (memory)
 - Plans what to do next
 
----
 
 ### 3️⃣ Memory & Token Management
 
@@ -162,7 +148,6 @@ To handle long conversations, the agent:
 - Summarizes older messages when hitting token limits
 - Keeps the context relevant and concise
 
----
 
 ### 4️⃣ External Tools (Environment)
 
@@ -175,7 +160,6 @@ The agent interacts with real-world APIs like:
 
 It uses the right tool based on what the LLM deems necessary.
 
----
 
 ### 5️⃣ Observation & Reasoning Loop
 
@@ -187,7 +171,6 @@ After a tool returns data:
 
 This loop continues until the query is fully answered.
 
----
 
 ### 6️⃣ Final Answer Generation
 
@@ -202,20 +185,14 @@ Once all data is collected:
 
 This modular architecture makes the ReAct Agent **robust, explainable, and easy to extend**, whether you’re adding new tools or improving decision logic.
 
----
 
 ### 🧰 Project Structure
 ![Project Structure](images/project_structure.png)
-
----
 
 
 ## ⚙️ Setting Up the Project
 
 To get started with the ReAct Agent, ensure you're using **Python 3.8 or higher**. It’s recommended to use a virtual environment to keep dependencies isolated.
-
----
-
 
 ### 1. Clone the repo
 
@@ -258,7 +235,6 @@ The web interface is structured into three key sections:
 
 ![Web UI](images/web_app.png)
 
----
 
 ## 🧠 Example : Weather in the Birth City of a Nobel Laureate
 
@@ -315,7 +291,6 @@ What is the weather in the city where the 2024 Nobel Prize in Physics winner was
 [FINAL ANSWER]: The weather in Chicago, where John J. Hopfield, the 2024 Nobel Prize in Physics winner, was born, is currently 6.46°C with a thunderstorm. The humidity is 94%, and the wind speed is 2.57 m/s.
 ```
 
----
 
 ### 🔍 Step 1: Discover the Winner
 
@@ -326,7 +301,6 @@ From the search results, it identifies:
 
 The agent decides to proceed with **Chicago**.
 
----
 
 ### 🌦️ Step 2: Retrieve Weather Data
 
@@ -338,7 +312,6 @@ The agent invokes the `weather` tool to get the weather in **Chicago**.
 - Humidity: **94%**
 - Wind Speed: **2.57 m/s**
 
----
 
 ### ✅ Final Answer
 
@@ -349,7 +322,6 @@ The weather in **Chicago**, where **John J. Hopfield**, one of the 2024 Nobel Pr
 
 This example demonstrates the ReAct agent’s multi-hop reasoning capabilities — combining knowledge retrieval and real-time data via tool usage.
 
----
 
 ## 📖 Full Blog Post
 
