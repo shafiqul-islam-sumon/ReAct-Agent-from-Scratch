@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 
 from agent import ReActAgent
@@ -114,10 +115,9 @@ class WebApp:
             # Extract final answer if present
             if "Final Answer:" in content:
                 final_answer = content.split("Final Answer:", 1)[-1].strip()
-                # content = content[:content.find("Final Answer:")].strip()
+                final_answer = re.sub(r"\\\((.*?)\\\)", r"\1", final_answer)
 
             # Sidebar messages (Chain of Thought)
-
             if "Thought:" in content or "Action:" in content or "PAUSE" in content or "Observation:" in content or "Final Answer:" in content:
                 formatted_content = content.replace("Thought:", "\n:green[**Thought**]:").replace("Action:", "\n:blue[**Action**]:").replace("PAUSE", "\n:orange[**PAUSE**]").replace("Observation:", "\n:violet[**Observation**]:").replace("Final Answer:", "\n:red[**Final Answer**]:")
                 sidebar_messages.append(formatted_content)
